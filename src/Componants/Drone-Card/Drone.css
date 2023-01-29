@@ -1,0 +1,109 @@
+/* this is just to center all the view */
+/* you can Delete this */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgb(204, 204, 204);
+  background: linear-gradient(
+    211deg,
+    rgba(204, 204, 204, 1) 0%,
+    rgba(255, 255, 255, 1) 69%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+/* =================================== */
+.card {
+  width: 400px;
+  height: 600px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(
+    211deg,
+    rgba(204, 204, 204, 1) 0%,
+    rgba(255, 255, 255, 1) 69%
+  );
+}
+.images-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    width: 300px;
+    transition: all 1s ease;
+}
+.img2{
+    width: 500px;
+    transition: all 1s ease;
+    transform: translate(50%, -50%);
+}
+.img3{
+    position: absolute;
+    width: 300px;
+    transform: translate(-50%, 35%);
+    z-index: 4;
+    transition: all 0.6s ease;
+    opacity: 1;
+}
+.hide{
+    width: 300px;
+    opacity: 0;
+}
+.lower-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px 150px 30px 30px;
+    background: #959595;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.header{
+    color: #ebebeb;
+}
+.desc{
+    width: 90%;
+    color: #ebebeb;
+    font-weight: bold;
+}
+/* border: 1px solid red; */
+.button{
+    border: none;
+    padding: 10px 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(
+    48deg,
+    rgba(204, 204, 204, 1) 0%,
+    rgba(255, 255, 255, 1) 69%
+  );
+}
+.button:hover{
+background: linear-gradient(
+    48deg,
+    rgb(165, 165, 165) 0%,
+    rgb(208, 208, 208) 69%
+  );
+}
